@@ -28,19 +28,15 @@ function Footer () {
              </Box>
            </Grid>
            <Grid item xs = {12} sm={4}>
-             <Box borderBottom={1}>Maintainer</Box>
+             <Box>Maintainer</Box>
              <Box>
-             <div class="frame-v">
-                <img src= {"/img/TIB_Logo_en.png"} alt="TIB logo" width="250"/>    
-              </div>
+                <img src= {"https://www.tib.eu/typo3conf/ext/tib_tmpl_bootstrap/Resources/Public/images/TIB_Logo_de.png"} alt="TIB logo" Padding="10" width="250"/>   
              </Box>
            </Grid>
            <Grid item xs = {12} sm={4}>
-             <Box borderBottom={1}>Funding</Box>
+             <Box>Funding</Box>
              <Box>
-                <Link href="/" color="inherit">
-                  Imprint
-                </Link>
+             <img src= {"https://terminology.nfdi4chem.de/img/dfg_logo.png"} alt="dfg logo" Padding="10"  width="250"/>
              </Box>
            </Grid>
          </Grid>
