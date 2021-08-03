@@ -1,47 +1,51 @@
 import React from 'react';
+import { Container, Grid, Box, Link } from '@material-ui/core';
 
 import './Footer.css';
 
 function Footer () {
 
   return (
-    <section className="footer">
-      <hr className="footer-seperator" />
-      <section className="footer-info">
-        <section className="footer-info-left">
-          <section className="footer-info__name">
-              Imprint
-          </section>
-          <section className="footer-info__returns">
-            Terms of Use
-          </section>
-          <section className="footer-info_privacy">
-            Privacy Policy
-          </section>        
-        </section>
-        <section className="footer-info-center">
-          <section className="footer-info__email">
-            shop.info@gmail.com
-          </section>
-          <section className="footer-info__terms">
-            Terms and Conditions
-            <br />
-            Copyright
-          </section>
-        </section>
-        <section className="footer-info-right">
-          <section className="footer-info__number">
-            99999999999
-          </section>
-          <section className="footer-info__contact">
-            My Story
-            <br />
-            Contact Us
-          </section>
-        </section>
-      </section>
-      <hr className="footer-seperator" />
-    </section>
+    <Box px={{ xs : 3, sm : 10}} py={{ xs : 5, sm : 10}} bgcolor="#cccccc">
+      <Container maxWidth="lg">
+         <Grid container spacing = {5}>
+           <Grid item xs = {12} sm={4}>
+             <Box borderBottom={1}>About the Service</Box>
+             <Box>
+                <Link href="/" color="inherit">
+                  Imprint
+                </Link>
+             </Box>
+             <Box>
+                <Link href="/" color="inherit">
+                  Terms of Use
+                </Link>
+             </Box>
+             <Box>
+                <Link href="/" color="inherit">
+                  Privacy Policy
+                </Link>
+             </Box>
+           </Grid>
+           <Grid item xs = {12} sm={4}>
+             <Box borderBottom={1}>Maintainer</Box>
+             <Box>
+                <Link href="/" color="inherit">
+                  Imprint
+                </Link>
+             </Box>
+           </Grid>
+           <Grid item xs = {12} sm={4}>
+             <Box borderBottom={1}>Funding</Box>
+             <Box>
+                <Link href="/" color="inherit">
+                  Imprint
+                </Link>
+             </Box>
+           </Grid>
+         </Grid>
+      </Container>
+    </Box>
   )
 
 }
