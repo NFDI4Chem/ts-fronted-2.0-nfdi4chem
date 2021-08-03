@@ -30,9 +30,9 @@ function Footer () {
            <Grid item xs = {12} sm={4}>
              <Box borderBottom={1}>Maintainer</Box>
              <Box>
-                <Link href="/" color="inherit">
-                  Imprint
-                </Link>
+             <div class="frame-v">
+                <img src= {"/img/TIB_Logo_en.png"} alt="TIB logo" width="250"/>    
+              </div>
              </Box>
            </Grid>
            <Grid item xs = {12} sm={4}>
