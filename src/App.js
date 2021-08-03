@@ -9,20 +9,17 @@ function App() {
     <div className="App">
       <Header />  
           <Switch>
-            <Route path="/contact">
-              <PageTitle title="contact"/>
-            </Route>
-            <Route path="/blog">
-              <PageTitle title="blog"/>
-            </Route>
-            <Route path="/shop">
-              <PageTitle title="shop"/>
-            </Route>
-            <Route path="/portfolio">
-              <PageTitle title="portfolio"/>
-            </Route>
             <Route path="/about">
-              <PageTitle title="about"/>
+              <PageTitle title="About"/>
+            </Route>
+            <Route path="/help">
+              <PageTitle title="Help"/>
+            </Route>
+            <Route path="/documentation">
+              <PageTitle title="Documentation"/>
+            </Route>
+            <Route path="/ontologies">
+              <PageTitle title="Ontologies"/>
             </Route>
             <Route path="/">
               <PageTitle title="home"/>
