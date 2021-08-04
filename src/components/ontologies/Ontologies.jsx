@@ -1,14 +1,14 @@
 import { Component } from "react";
 import React from "react";
 
-class Help extends Component{
+class Ontologies extends Component{
     render(){
         return(
         <div>
-           <h3>Help</h3>
+           <h3>Ontologies</h3>
            <p>Add content</p>
         </div>
         );
     }
 }
-export default Help;
+export default Ontologies;
