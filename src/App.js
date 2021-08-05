@@ -5,6 +5,7 @@ import About from './components/about'
 import Help from './components/help'
 import Documentation from './components/documentation'
 import Ontologies from './components/ontologies'
+import Home from './components/home'
 
 import './App.css';
 
@@ -19,8 +20,8 @@ function App() {
             <Route path="/ontologies" component={Ontologies}>
               <PageTitle title="ontologies"/>
             </Route>
-            <Route path="/">
-              <PageTitle title="home"/>
+            <Route path="/" component={Home}>
+              
             </Route>
           </Switch>
       <Footer />
