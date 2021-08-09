@@ -2,7 +2,7 @@ import { Component } from "react";
 import React from "react";
 import './Home.css'
 import SearchBar from './search/SearchBar';
-import { Grid, Container } from '@material-ui/core'
+import { Grid, Container, Button } from '@material-ui/core'
 
 class Home extends Component{
     render(){

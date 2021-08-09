@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import SearchResult from "./SearchResult";
+import { Button } from '@material-ui/core';
+import SearchIcon from '@material-ui/icons/Search';
 
 const data = [
   {
@@ -50,9 +52,7 @@ class SearchBar extends Component {
             className="search-input"
             placeholder="Search Here..."
           />
-          <button className="search-button">
-            <i className="fas fa-search" />
-          </button>
+          <SearchIcon color="primary"></SearchIcon>
         </div>
         {result}
       </div>
