@@ -17,9 +17,7 @@ function App() {
             <Route path="/about" component={About}/>
             <Route path="/help" component={Help}/>
             <Route path="/documentation" component={Documentation}/>
-            <Route path="/ontologies" component={Ontologies}>
-              <PageTitle title="ontologies"/>
-            </Route>
+            <Route path="/ontologies" component={Ontologies}/>
             <Route path="/" component={Home}>
               
             </Route>
