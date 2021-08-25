@@ -6,6 +6,8 @@ import Help from './components/help'
 import Documentation from './components/documentation'
 import Ontologies from './components/ontologies'
 import Home from './components/home'
+import OntologyPage from 'tib-ts-library/dist/ontologyDetail';
+
 
 import './App.css';
 
@@ -18,6 +20,7 @@ function App() {
             <Route path="/help" component={Help}/>
             <Route path="/documentation" component={Documentation}/>
             <Route path="/ontologies" component={Ontologies}/>
+            <Route exact path="/ontology/:ontologyId" component={OntologyPage} />
             <Route path="/" component={Home}>
               
             </Route>
