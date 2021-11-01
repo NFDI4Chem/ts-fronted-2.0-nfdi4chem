@@ -3,7 +3,6 @@ import React from "react";
 import './Home.css'
 import SearchBar from './search/SearchBar';
 import { Grid, Container, Button } from '@material-ui/core'
-import Timeline from "./twitter/twitter";
 
 class Home extends Component{
     render(){
@@ -22,7 +21,6 @@ class Home extends Component{
               It is part of the service portfolio of the NFDI4Chem consortium within the National Research Data Infrastructure.</p>
            </Grid>
            </Container>
-           <Timeline/>
         </div>
         );
     }
