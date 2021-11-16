@@ -6,7 +6,7 @@ class Ontologies extends Component{
     render(){
         return(
         <div>
-           <OntologyList target = "general" />
+           <OntologyList target = "chemistry" />
         </div>
         );
     }
