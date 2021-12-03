@@ -1,0 +1,35 @@
+version: '3.7'
+
+services:
+  
+  ts-backend2.0:
+    image: backend2.0
+    environment:
+      - CHOKIDAR_USEPOLLING=true 
+    ports:
+      - 8000:8000
+    command: ["node", "app.js"]
+  
+  tib-ts-library:
+    image: tib-terminology-service-library
+    environment:
+      - CHOKIDAR_USEPOLLING=true 
+    ports:
+      - 3000:3001
+    command: ["npm", "start"]
+
+  nfdi4chem2.0:
+    container_name: nfdi4chem2.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - ts-backend2.0
+      - tib-ts-library
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=true
