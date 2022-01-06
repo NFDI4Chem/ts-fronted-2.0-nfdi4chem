@@ -20,7 +20,7 @@ function App() {
             <Route path="/help" component={Help}/>
             <Route path="/documentation" component={Documentation}/>
             <Route path="/ontologies" component={Ontologies}/>
-            <Route exact path="/ontology/:ontologyId" component={OntologyPage} />
+            <Route exact path="/ontologies/:ontologyId" component={OntologyPage} />
             <Route path="/" component={Home}>
               
             </Route>
