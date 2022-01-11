@@ -1,7 +1,6 @@
 {
   "name": "nfdi4chem-ts",
   "version": "0.1.0",
-  "homepage": "/ts",
   "proxy": "http://localhost:8000",
   "private": true,
   "dependencies": {
