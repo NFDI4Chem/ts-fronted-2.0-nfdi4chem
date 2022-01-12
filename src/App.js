@@ -21,7 +21,7 @@ function App() {
             <Route path="/documentation" component={Documentation}/>
             <Route path="/ontologies" component={Ontologies}/>
             <Route exact path="/ontologies/:ontologyId" component={OntologyPage} />
-            <Route path="/" component={Home}>
+            <Route exact path="/" component={Home}>
               
             </Route>
           </Switch>
