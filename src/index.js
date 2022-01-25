@@ -7,7 +7,7 @@ import OntologyPage from 'tib-ts-library/dist/ontologyDetail';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router >
+    <Router basename="/ts" >
       <Route exact path="/ontologies/:ontologyId" component={OntologyPage} />
       <App/>
     </Router>
