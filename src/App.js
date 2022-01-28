@@ -6,7 +6,7 @@ import Help from './components/help'
 import Documentation from './components/documentation'
 import Ontologies from './components/ontologies'
 import Home from './components/home'
-import OntologyPage from 'tib-ts-library/dist/ontologyDetail';
+import OntologyPage from '.components/ontologies-features/ontologyDetail';
 import './App.css';
 
 function App() {
