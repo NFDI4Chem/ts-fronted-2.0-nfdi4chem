@@ -1,6 +1,6 @@
 import { Component } from "react";
 import React from "react";
-import OntologyList from './ontologyList';
+import OntologyList from "../ontologies-features/ontologyList";
 
 class Ontologies extends Component{
     render(){
