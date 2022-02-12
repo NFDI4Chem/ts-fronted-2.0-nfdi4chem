@@ -34,7 +34,8 @@ class OntologyPage extends React.Component{
      * Get the ontology detail from the backend
      */
     getOntology() {
-        let url = '/ontologies/' + this.state.ontologyId;
+        let baseurl = "http://localhost:8000";
+        let url = baseurl + '/ontologies/' + this.state.ontologyId;
         fetch(url, {
             method: 'GET',                        
         })
@@ -60,7 +61,8 @@ class OntologyPage extends React.Component{
      * Get the ontology root classes from the backend
      */
     getRootTerms() {
-    let url = '/rootterms/' + this.state.ontologyId;
+        let baseurl = "http://localhost:8000";
+        let url = baseurl + '/rootterms/' + this.state.ontologyId;
     fetch(url, {
         method: 'GET',                        
     })
@@ -85,7 +87,8 @@ class OntologyPage extends React.Component{
      * Get the ontology root properties from the backend
      */
      getRootProps() {
-        let url = '/rootproperties/' + this.state.ontologyId;
+        let baseurl = "http://localhost:8000";
+        let url = baseurl +'/rootproperties/' + this.state.ontologyId;
         fetch(url, {
             method: 'GET',                        
         })

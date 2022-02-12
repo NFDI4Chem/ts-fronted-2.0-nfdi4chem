@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import './index.css';
-import App from './App';
-import OntologyPage from 'tib-ts-library/dist/ontologyDetail';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./index.css";
+import App from "./App";
+import OntologyPage from "./components/ontologies-features/ontologyDetail";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename="/ts" >
+    <Router basename="/ts">
       <Route exact path="/ontologies/:ontologyId" component={OntologyPage} />
-      <App/>
+      <App />
     </Router>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-

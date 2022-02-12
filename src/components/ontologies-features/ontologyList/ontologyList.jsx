@@ -6,10 +6,11 @@ import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import Select from '@material-ui/core/Select';
 import InputLabel from '@material-ui/core/InputLabel';
+import { ContactSupportOutlined } from '@material-ui/icons';
 
 class OntologyList extends React.Component{
-
-    constructor(props){
+    
+     constructor(props){
         super(props);
         this.state = ({
             error: null,
@@ -76,7 +77,10 @@ class OntologyList extends React.Component{
      * Ajax request to fetch the list of ontologies from the backend
      */
     ontologiesAjax() {
-        let url = this.getTargetEndPoint(this.state.target)
+        let baseurl = 'http://localhost:8000';
+        let url = baseurl + this.getTargetEndPoint(this.state.target)
+        console.log("aja call:" + url);
+
         fetch(url, {
             method: 'GET',                        
         })
