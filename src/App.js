@@ -17,8 +17,8 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/help" component={Help} />
         <Route path="/documentation" component={Documentation} />
-        <Route path="/ontologies" component={Ontologies} />
         <Route exact path="/ontologies/:ontologyId" component={OntologyPage} />
+        <Route exact path="/ontologies" component={Ontologies} />
         <Route exact path="/" component={Home} />
       </Switch>
       <Footer />
