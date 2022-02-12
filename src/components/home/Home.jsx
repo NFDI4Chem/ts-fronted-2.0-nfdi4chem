@@ -9,7 +9,7 @@ class Home extends Component{
         return(
         <div id="mainpageSearchBox">
         <Container maxWidth="lg">
-           <h4 style={{margin: 20}}>Welcome to NFDI4Chem Terminology Service</h4>
+           <h4 style={{margin: 20}}>Welcome to NFDI4Chem Terminology Service Branch</h4>
            <Grid item xs = {8}>
              <SearchBar />
            </Grid>
