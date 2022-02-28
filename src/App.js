@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header />  
+        <BrowserRouter>
           <Switch>
             <Route path="/about" component={About}/>
             <Route path="/help" component={Help}/>
@@ -21,6 +22,7 @@ function App() {
             <Route exact path="/ontologies/:ontologyId" component={OntologyPage} />
             <Route exact path="/" component={Home}/>
           </Switch>
+          </BrowserRouter>
       <Footer />
     </div>
   );
