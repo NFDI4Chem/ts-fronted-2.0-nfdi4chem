@@ -12,8 +12,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <Header />  
-        <BrowserRouter>
           <Switch>
             <Route path="/about" component={About}/>
             <Route path="/help" component={Help}/>
@@ -21,9 +21,9 @@ function App() {
             <Route path="/ontologies" component={Ontologies}/>
             <Route exact path="/ontologies/:ontologyId" component={OntologyPage} />
             <Route exact path="/" component={Home}/>
-          </Switch>
-          </BrowserRouter>
+          </Switch> 
       <Footer />
+      </BrowserRouter>
     </div>
   );
 }
