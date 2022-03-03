@@ -20,7 +20,6 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-twitter-widgets": "^1.10.0",
-    "tib-ts-library": "^0.4.15",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
