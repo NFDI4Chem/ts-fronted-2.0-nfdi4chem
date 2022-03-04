@@ -7,6 +7,7 @@ import Documentation from './components/documentation'
 import Ontologies from './components/ontologies'
 import Home from './components/home'
 import './App.css';
+import OntologyPage from './library/ontologyDetail'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/documentation" component={Documentation}/>
             <Route path="/ontologies" component={Ontologies}/> 
             <Route exact path="/" component={Home}/>
+            <Route path="/ontologies:ontologyId" component={OntologyPage}/>
           </Switch> 
       <Footer />
       </BrowserRouter>
