@@ -77,8 +77,8 @@ class OntologyList extends React.Component{
      * Ajax request to fetch the list of ontologies from the backend
      */
     ontologiesAjax() {
-        let url = this.getTargetEndPoint(this.state.target)
-        fetch(url, {
+        // let url = this.getTargetEndPoint(this.state.target)
+        fetch(`http://service.tib.eu/ts4tib/api/ontologies/filterby?schema=collection&classification=NFDI4CHEM`, {
             method: 'GET',                        
         })
           .then(res => res.json())          
@@ -221,7 +221,7 @@ class OntologyList extends React.Component{
           for(let i=0; i < this.state.ontologies.length; i++){
               let item = this.state.ontologies[i];
               ontologyList.push( this.state.ontologiesHiddenStatus[i] &&
-                    <Link to={"/ontology/" + item.id} key={i} className="ontology-card-link">
+                    <Link to={"/ontologies/" + item.id} key={i} className="ontology-card-link">
                         <Grid container className="ontology-card" id={"ontology_" + i} key={item.id}>
                             <Grid item xs={8}>
                                 <div className="ontology-card-title">

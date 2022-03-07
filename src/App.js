@@ -7,7 +7,7 @@ import Documentation from './components/documentation'
 import Ontologies from './components/ontologies'
 import Home from './components/home'
 import './App.css';
-import OntologyPage from './library/ontologyDetail'
+import OntologyPage from './components/library/ontologyDetail'
 
 function App() {
   return (
