@@ -32,8 +32,8 @@ class OntologyPage extends React.Component{
      * Get the ontology detail from the backend
      */
     getOntology() {
-        // let url = '/ontology/' + this.state.ontologyId;
-        fetch(`http://service.tib.eu/ts4tib/api/ontologies/filterby?schema=collection&classification=NFDI4CHEM`, {
+        let url = '/ontologies/' + this.state.ontologyId;
+        fetch(url, {
             method: 'GET',                        
         })
           .then(res => res.json())          

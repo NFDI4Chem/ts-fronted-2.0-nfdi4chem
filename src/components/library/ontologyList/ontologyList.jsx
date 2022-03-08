@@ -77,8 +77,8 @@ class OntologyList extends React.Component{
      * Ajax request to fetch the list of ontologies from the backend
      */
     ontologiesAjax() {
-        // let url = this.getTargetEndPoint(this.state.target)
-        fetch(`http://service.tib.eu/ts4tib/api/ontologies/filterby?schema=collection&classification=NFDI4CHEM`, {
+        let url = this.getTargetEndPoint(this.state.target)
+        fetch(url, {
             method: 'GET',                        
         })
           .then(res => res.json())          
