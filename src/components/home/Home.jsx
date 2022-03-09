@@ -13,7 +13,7 @@ class Home extends Component{
         return(
           <Container fluid>
           
-           <h1 className="header">Welcome to NFDI4Chem Terminology Service Branch</h1>
+           <h1 className="header">Welcome to NFDI4Chem Terminology Service Branch merging library</h1>
             <div>
             The NFDI4Chem Terminology Service is a repository for chemistry and related ontologies providing a single point of access to the latest ontology versions. 
               You can browse or search the ontologies and look into their terms and relations. The Terminology Service can be used either by humans throught the website or by machines via the TS API.
