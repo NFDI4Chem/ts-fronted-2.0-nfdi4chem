@@ -79,7 +79,7 @@ class OntologyList extends React.Component{
     ontologiesAjax() {
         let baseurl = 'http://localhost:8000';
         let url = baseurl + this.getTargetEndPoint(this.state.target)
-        console.log("aja call:" + url);
+        console.log("ajax call:" + url);
 
         fetch(url, {
             method: 'GET',                        
