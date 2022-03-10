@@ -16,5 +16,11 @@ RUN npm install react-scripts@3.4.1 -g --silent
 # add app
 COPY . ./
 
+# Include default values; override in deployment image
+RUN cp default.env .env
+
+# Build
+RUN npm run build
+
 # start app
 CMD ["npm", "run", "start"]
