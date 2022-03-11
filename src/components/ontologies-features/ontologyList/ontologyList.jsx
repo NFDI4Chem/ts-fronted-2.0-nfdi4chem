@@ -42,7 +42,7 @@ class OntologyList extends React.Component{
             return '/ontologies';
         }
         else if (target === 'chemistry'){ // NFDI4CHEM
-            return '/ontologies/chemistry'; // /api/ontologies/chem
+            return '/ts/api/ontologies/chemistry'; // /api/ontologies/chem
         }
         else if (target === 'engineering'){ // NFDI4ING
             return '/ontologies/engineering';
@@ -77,9 +77,9 @@ class OntologyList extends React.Component{
      * Ajax request to fetch the list of ontologies from the backend
      */
     ontologiesAjax() {
-       let baseurl = '/ts/api';
-       let url = baseurl + this.getTargetEndPoint(this.state.target); 
-        /* let url = this.getTargetEndPoint(this.state.target) */
+    //    let baseurl = '/ts/api';
+    //    let url = baseurl + this.getTargetEndPoint(this.state.target); 
+        let url = this.getTargetEndPoint(this.state.target);
         console.log("ajax call:" + url);
 
         fetch(url, {
