@@ -77,9 +77,9 @@ class OntologyList extends React.Component{
      * Ajax request to fetch the list of ontologies from the backend
      */
     ontologiesAjax() {
-       /* let baseurl = 'http://localhost:8000'; */
-       /* let url = baseurl + this.getTargetEndPoint(this.state.target) */
-        let url = this.getTargetEndPoint(this.state.target)
+       let baseurl = '/ts/api/';
+       let url = baseurl + this.getTargetEndPoint(this.state.target); 
+        /* let url = this.getTargetEndPoint(this.state.target) */
         console.log("ajax call:" + url);
 
         fetch(url, {
