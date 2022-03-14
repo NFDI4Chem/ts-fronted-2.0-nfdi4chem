@@ -9,14 +9,6 @@ services:
     ports:
       - 8000:8000
     command: ["node", "app.js"]
-  
-  tib-ts-library:
-    image: tib-terminology-service-library
-    environment:
-      - CHOKIDAR_USEPOLLING=true 
-    ports:
-      - 3000:3001
-    command: ["npm", "start"]
 
   nfdi4chem2.0:
     container_name: nfdi4chem2.0
@@ -25,7 +17,6 @@ services:
       dockerfile: Dockerfile
     depends_on:
       - ts-backend2.0
-      - tib-ts-library
     volumes:
       - '.:/app'
       - '/app/node_modules'
