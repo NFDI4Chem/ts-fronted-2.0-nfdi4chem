@@ -38,6 +38,6 @@ RUN npm install -g @beam-australia/react-env
 
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/build /usr/local/src/frontend/build
 
 CMD ["nginx", "-g", "daemon off;"]
