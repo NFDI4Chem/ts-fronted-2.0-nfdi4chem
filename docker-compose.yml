@@ -7,7 +7,7 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true 
     ports:
-      - 8000:8000
+      - 8080:8080
     command: ["node", "app.js"]
 
   nfdi4chem2.0:
@@ -21,6 +21,6 @@ services:
       - '.:/app'
       - '/app/node_modules'
     ports:
-      - 3001:3000
+      - 3000:3000
     env_file:
       - default.env
