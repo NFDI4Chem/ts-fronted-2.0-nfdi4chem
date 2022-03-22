@@ -1,26 +1,16 @@
 version: '3.7'
 
 services:
-  
-  ts-backend2.0:
-    image: backend2.0
-    environment:
-      - CHOKIDAR_USEPOLLING=true 
-    ports:
-      - 8080:8080
-    command: ["node", "app.js"]
 
   nfdi4chem2.0:
     container_name: nfdi4chem2.0
     build:
       context: .
       dockerfile: Dockerfile
-    depends_on:
-      - ts-backend2.0
     volumes:
       - '.:/app'
       - '/app/node_modules'
     ports:
-      - 3000:3000
+      - '127.0.0.1:3000:80'
     env_file:
       - default.env
