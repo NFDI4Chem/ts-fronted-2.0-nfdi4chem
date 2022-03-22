@@ -22,7 +22,7 @@ COPY . ./
 RUN cp default.env .env
 
 # Build
-RUN npm run build
+#RUN npm run build
 
 EXPOSE 3000
 
