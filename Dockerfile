@@ -24,20 +24,22 @@ RUN cp default.env .env
 # Build
 RUN npm run build
 
+EXPOSE 3000
+
 # start app
-#CMD ["npm", "run", "start"]
+CMD ["npm", "run", "start"]
 
 # Serve the built application with nginx
-FROM nginx:stable-alpine
+#FROM nginx:stable-alpine
 
-RUN apk add --no-cache nodejs npm bash
+#RUN apk add --no-cache nodejs npm bash
 
-SHELL ["/bin/bash", "-c"]
+#SHELL ["/bin/bash", "-c"]
 
-RUN npm install -g @beam-australia/react-env
+#RUN npm install -g @beam-australia/react-env
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+#COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-COPY --from=build /app/build /usr/local/src/frontend/build
+#COPY --from=build /app/build /usr/local/src/frontend/build
 
-CMD ["nginx", "-g", "daemon off;"]
+#CMD ["nginx", "-g", "daemon off;"]
