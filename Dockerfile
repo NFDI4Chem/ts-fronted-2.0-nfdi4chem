@@ -22,12 +22,12 @@ COPY . ./
 RUN cp default.env .env
 
 # Build
-#RUN npm run build
+RUN npm run build
 
 EXPOSE 3000
 
 # start app
-CMD ["npm", "run", "start"]
+#CMD ["npm", "run", "start"]
 
 # Serve the built application with nginx
 #FROM nginx:stable-alpine
