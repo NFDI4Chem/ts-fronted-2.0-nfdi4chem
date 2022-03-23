@@ -38,6 +38,9 @@ SHELL ["/bin/bash", "-c"]
 
 RUN npm install -g @beam-australia/react-env
 
+ADD entrypoint.sh /var/entrypoint.sh
+RUN ["chmod", "+x", "/var/entrypoint.sh"]
+
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 COPY --from=build /app/build /usr/local/src/frontend/build
