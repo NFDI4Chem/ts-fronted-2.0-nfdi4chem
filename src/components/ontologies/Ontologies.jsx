@@ -1,6 +1,7 @@
 import { Component } from "react";
 import React from "react";
-import OntologyList from 'tib-ts-library/dist/ontologyList';
+// import OntologyList from 'tib-ts-library/dist/ontologyList';
+import OntologyList from './OntologyList';
 
 const url = process.env.BACKEND_URL
 
