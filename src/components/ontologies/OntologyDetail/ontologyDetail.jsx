@@ -37,7 +37,7 @@ class OntologyPage extends React.Component{
     getOntology() {
         let url = '/ontologies/' + this.state.ontologyId;
         fetch((this.props.url ?? 'http://localhost:8080') + url, {
-            method: 'GET',                        
+            method: 'GET',   mode:'cors'                     
         })
           .then(res => res.json())          
           .then(
@@ -63,7 +63,7 @@ class OntologyPage extends React.Component{
     getRootTerms() {
     let url = '/rootterms/' + this.state.ontologyId;
     fetch((this.props.url ?? 'http://localhost:8080') + url, {
-        method: 'GET',                        
+        method: 'GET',  mode:'cors'                      
     })
         .then(res => res.json())          
         .then(
@@ -88,7 +88,7 @@ class OntologyPage extends React.Component{
      getRootProps() {
         let url = '/rootproperties/' + this.state.ontologyId;
         fetch((this.props.url ?? 'http://localhost:8080') + url, {
-            method: 'GET',                        
+            method: 'GET',   mode:'cors'                     
         })
             .then(res => res.json())          
             .then(

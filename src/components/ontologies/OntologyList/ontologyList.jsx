@@ -78,7 +78,7 @@ class OntologyList extends React.Component{
     ontologiesAjax() {
         let url = this.getTargetEndPoint(this.state.target)
         fetch((this.props.url ?? 'http://localhost:8080') + url, {
-            method: 'GET',                        
+            method: 'GET', mode:'cors'                       
         })
           .then(res => res.json())          
           .then(
