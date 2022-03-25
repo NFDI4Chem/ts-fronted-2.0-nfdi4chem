@@ -1,32 +1,53 @@
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 90%;
-  }
-  
-  td, th {
-    border: 1px solid #dad2d2;
-    text-align: left;
-    padding: 8px;
-  }
-  
+.ontology-card{
+    border: 1px black solid;
+    background-color: rgb(245, 250, 253);
+    margin-top: 10px;
+    padding: 10px;
+    margin-right: 5px;
+    height: auto;
+    text-align: justify;
+    
+}
 
-  .ontology-info-table-prop{
-    background-color: #dddddd;
-  }
+.ontology-card-description{
+    font-size: 14px;
+    margin-top: 30px;
+}
 
-  .ontology-stats-table-prop{
-    background-color: #dddddd;
-  }
+#ontology-filter > div{
+    margin-top: 40px;
+}
 
-  .ontology-download-table-prop{
-      background-color: #dddddd;
-  }
+.ontology-card-meta-data > div{
+    margin-right: 0;
+    margin-left: 30%;
+}
 
-  #info-table-wrapper{
-    padding-left: 30px;
-  }
+#ontologyList-wrapper-div{
+    margin-top: 30px;
+    padding-top: 5px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 
-  #ontology-download-wrapper{
-    padding-left: 30px;
-  }
+#ontologylist-search-grid > .MuiFormControl-root.MuiTextField-root{
+    width: 80%;
+    background-color: white;
+
+}
+
+#ontologylist-search-grid > .MuiFormControl-root.MuiTextField-root > .MuiOutlinedInput-root > .MuiInputBase-input{
+    font-size: 15px;
+}
+
+.ontology-card-link{
+    color: black;
+}
+
+#ontologylist-sort-grid> .MuiInputBase-root{
+    width: 60%;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
